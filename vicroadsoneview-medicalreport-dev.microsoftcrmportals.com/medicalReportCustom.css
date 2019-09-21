@@ -1,0 +1,1293 @@
+/* Customisation variables */
+:root {
+    --vicroads-navy: #243441;
+}
+
+/* Museo */
+
+@font-face {
+    font-family: "m";
+    src: url("/m300.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "m";
+    src: url("/m500.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "m";
+    src: url("/m700.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* Museo Sans */
+@font-face {
+    font-family: "ms";
+    src: url("/ms300.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ms";
+    src: url("/ms300-i.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "ms";
+    src: url("/ms500.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ms";
+    src: url("/ms500-i.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "ms";
+    src: url("/ms700.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ms";
+    src: url("/ms700-i.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+
+
+/* Temp Styles TODO start */
+
+.page-heading {
+    display: none;
+}
+
+/* Temp Styles TODO end */
+
+
+
+/* Styles for header start */
+
+.medical-report-navbar {
+    background-color: #fff;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 160px;
+}
+
+    .medical-report-navbar > div {
+        height: 160px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .medical-report-navbar .navbar-header {
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .medical-report-navbar .navbar-header > div:first-of-type{
+        flex-grow: 1;
+        padding-right: 1em;
+    }
+
+        .medical-report-navbar .navbar-header > div {
+            font-family: m;
+            font-weight: 500;
+            font-size: 36px;
+            color: #333F48;
+        }
+
+    .medical-report-navbar .navbar-name {
+        font-size: 20px;
+    }
+
+    .medical-report-navbar .navbar-header p {
+        margin: 0;
+    }
+
+.navbar-logo {
+    content: ' ';
+    background: url('/vrheaderlogo.png') no-repeat;
+    background-position: top right;
+    background-size: contain;
+    float: right;
+    width: 250px;
+    height: 60px;
+    margin-top: 5px;
+}
+
+/* Styles for header end */
+
+/* Styles for progress indicator Start */
+
+#WebFormControl {
+    margin-top: 160px;
+}
+
+#WebFormControl_ProgressIndicator {
+    position: fixed;
+    z-index: 1000;
+}
+
+    #WebFormControl_ProgressIndicator:after {
+        position: absolute;
+        content: ' ';
+        width: 100vw;
+        height: 58px;
+        background: #fff;
+        left: 50%;
+        right: 50%;
+        top: 0;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        z-index: 1
+    }
+
+
+@media (min-width: 768px) {
+    #WebFormControl_ProgressIndicator .progress {
+        width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    #WebFormControl_ProgressIndicator .progress {
+        width: 940px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #WebFormControl_ProgressIndicator .progress {
+        width: 1140px;
+    }
+}
+
+
+#WebFormControl_ProgressIndicator .progress {
+    margin: auto;
+    border: 1px solid #333F48;
+    position: relative;
+    z-index: 2;
+}
+
+#WebFormControl_ProgressIndicator .list-group-item {
+    width: 16.66%;
+    padding: 18px 0;
+    text-align: center;
+    font-family: m;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    background-color: #F2EFF3;
+    border-width: 0;
+    position: relative;
+    z-index: 2;
+}
+
+    #WebFormControl_ProgressIndicator .list-group-item.active {
+        font-weight: 700;
+    }
+
+        #WebFormControl_ProgressIndicator .list-group-item.active:after {
+            position: absolute;
+            content: ' ';
+            border-bottom: 3px solid #243441;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+        }
+
+/*#WebFormControl_ProgressIndicator .list-group-item.incomplete {
+  color: #90979f;
+}*/
+
+/* Styles for progress indicator End */
+
+
+/* Styles for form start */
+
+#content_form {
+    background-color: #243441;
+}
+
+/* Styles for form end */
+
+
+/* Styles for sidenav start */
+
+.sidenav-type {
+    font-size: 20px;
+    color: #000;
+    background-color: #F2EFF3;
+    padding: 10px 20px;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .sidenav-container {
+        width: 180px;
+        margin-left: -10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .sidenav-container {
+        width: 220px;
+        margin-left: -20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sidenav-container {
+        width: 280px;
+        margin-left: -100px;
+    }
+}
+
+
+.sidenav-container {
+    position: fixed;
+    margin-top: 50px;
+    background-color: #F2EFF3;
+    font-family: m;
+    font-weight: 500;
+    border: 1px solid #333F48;
+    z-index: 1000;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+}
+
+
+.sidenavtab-container {
+    max-height: 275px;
+    border-bottom: 15px solid #F2EFF3;
+    overflow: auto;
+}
+
+.sidenav-tab {
+    padding: 10px 10px 10px 40px;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+}
+
+    .sidenav-tab:hover {
+        cursor: pointer;
+        background-color: #fff;
+    }
+
+.active-sidetab {
+    background-color: #fff;
+}
+
+    .active-sidetab:after {
+        content: "\f040";
+        font-family: FontAwesome;
+        left: 18px;
+        position: absolute;
+        font-size: 16px;
+        top: 10px;
+        color: #000;
+    }
+
+.display-tick:not(.active-sidetab):after {
+    content: "\e013";
+    font-family: 'Glyphicons Halflings';
+    left: 15px;
+    position: absolute;
+    font-size: 16px;
+    top: 10px;
+    color: #000;
+}
+
+/* Styles for sidenav End */
+
+
+/* Styles for form headings Start */
+
+.crmEntityFormView {
+    font-family: Verdana;
+}
+
+#EntityFormView {
+    background-color: #fff;
+    padding-top: 60px;
+}
+
+.control.input-valid, label.input-valid {
+    position: relative;
+}
+
+
+    .control.input-valid:after, label.input-valid:after {
+        font-family: 'Glyphicons Halflings';
+        content: "\e013";
+        color: #006938;
+        position: absolute;
+        right: 0px;
+        top: 8px;
+    }
+
+/*below css class added as part of cmpp- 6041/42/43/44 to adjust the tick mark against the I dont have information check box on the form*/
+label[id="vr_idonthavethisinformation_label"].input-valid:after {
+        font-family: 'Glyphicons Halflings';
+        content: "\e013";
+        color: #006938;
+        position: relative;
+        right: -3px !important;
+        top: 3px !important;
+    }
+
+    label.input-valid:after {
+        right: -20px;
+        top: 0;
+    }
+
+.tab-title, .tab, .file-cell {
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .tab-title, .tab, .file-cell {
+        max-width: 360px;
+    }
+}
+
+@media (min-width: 992px) {
+    .tab-title, .tab, .file-cell {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .tab-title, .tab, .file-cell {
+        max-width: 700px;
+    }
+}
+
+
+.tab-title, .section-title {
+    text-align: center;
+    font-family: m;
+    font-weight: 500;
+    font-size: 22px;
+    color: #000;
+    border-bottom: 1px solid #006938 !important;
+    margin-bottom: 25px !important;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.section-title {
+    padding-top: 0;
+}
+
+/* Styles for form headings End */
+
+
+/* Styles for form buttons Start */
+
+@media (min-width: 768px) {
+    .prev-nxt-container {
+        max-width: 380px;
+    }
+}
+
+@media (min-width: 992px) {
+    .prev-nxt-container {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .prev-nxt-container {
+        max-width: 700px;
+    }
+}
+
+.prev-nxt-container {
+    padding: 20px 0;
+    border-bottom: 1px solid #006938;
+    overflow: hidden;
+    margin: auto;
+}
+
+.btn-prev, .btn-next {
+    cursor: pointer;
+    float: left;
+    padding: 10px 30px 10px 40px;
+    color: #fff;
+    background-color: #006938;
+    position: relative;
+}
+
+.btn-next {
+    float: right;
+    padding: 10px 40px 10px 30px;
+}
+
+.btn-prev:before {
+    content: "\f053";
+    font-family: FontAwesome;
+    left: 20px;
+    position: absolute;
+    font-size: 14px;
+    top: 12px;
+}
+
+.btn-next:after {
+    content: "\f054";
+    font-family: FontAwesome;
+    right: 20px;
+    position: absolute;
+    font-size: 14px;
+    top: 12px;
+}
+
+.btn-prev:hover, .btn-next:hover {
+    background-color: #39b54a;
+}
+
+.crmEntityFormView .tab {
+    margin-bottom: 0;
+}
+
+.crmEntityFormView .actions {
+    margin: 0;
+    background-color: #fff;
+    padding-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+
+    .crmEntityFormView .actions > div {
+        width: 380px;
+    }
+}
+
+@media (min-width: 992px) {
+    .crmEntityFormView .actions > div {
+        width: 500px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .crmEntityFormView .actions > div {
+        width: 700px;
+    }
+}
+
+.crmEntityFormView .actions > div {
+    margin: auto;
+    float: none;
+    padding: 0;
+}
+
+
+
+.crmEntityFormView .actions .entity-action-button:first-child {
+    float: left;
+}
+
+.crmEntityFormView .actions .entity-action-button:last-child {
+    float: right;
+}
+
+.crmEntityFormView .actions .entity-action-button:first-child:after {
+    content: "\f053";
+    font-family: FontAwesome;
+    left: 15px;
+    color: #fff;
+    position: absolute;
+    font-size: 14px;
+    top: 12px;
+    width: 10px;
+    z-index: 100;
+}
+
+.crmEntityFormView .actions .entity-action-button:last-child:after {
+    content: "\f054";
+    font-family: FontAwesome;
+    left: auto;
+    right: 15px;
+    color: #fff;
+    position: absolute;
+    font-size: 14px;
+    top: 12px;
+    width: 10px;
+    z-index: 100;
+}
+
+.crmEntityFormView .actions .entity-action-button:first-child:hover {
+    color: #fff;
+}
+
+.crmEntityFormView .actions .entity-action-button input {
+    background-color: #243441;
+}
+
+    /*.crmEntityFormView .actions .entity-action-button .previous-btn {
+  background-color: #243441;
+  position: relative;
+ }*/
+
+
+    .crmEntityFormView .actions .entity-action-button input:hover {
+        background-color: #90979f;
+    }
+
+/*.crmEntityFormView .actions .entity-action-button .previous-btn:hover {
+  background-color: #90979f;
+ }*/
+
+@media (min-width: 768px) {
+    .crmEntityFormView .actions .entity-action-button input {
+        width: 160px;
+    }
+}
+
+@media (min-width: 992px) {
+    .crmEntityFormView .actions .entity-action-button input {
+        width: 200px;
+    }
+}
+
+.crmEntityFormView .actions .entity-action-button input {
+    text-align: center;
+    color: #fff;
+    border-width: 0;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+
+
+
+.entity-action-button.prev-action-btn {
+    float: left !important;
+}
+
+    .entity-action-button.prev-action-btn:after {
+        content: "\f053" !important;
+        font-family: FontAwesome;
+        left: 15px !important;
+        color: #fff;
+        position: absolute;
+        font-size: 14px;
+        top: 12px;
+        width: 10px;
+        z-index: 100;
+    }
+
+/* Styles for form buttons End */
+
+
+/* Styles for footer Start */
+
+footer {
+    font-family: m;
+    font-weight: 500;
+    font-size: 14px;
+    height: 100px;
+    background: #243441;
+    padding: 20px 0;
+}
+
+    footer * {
+        color: #fff;
+    }
+
+.footer-container > div {
+    width: 50%;
+    float: left;
+}
+
+.footer-logo {
+    content: ' ';
+    background: url('/vrfooterlogo.png') no-repeat;
+    background-position: top right;
+    background-size: contain;
+    float: right;
+    width: 150px;
+    height: 40px;
+}
+
+.footer-links a {
+    margin-right: 20px;
+}
+
+    .footer-links a, .footer-links a:hover, .footer-links a:visited {
+        color: #fff;
+    }
+/* Styles for footer End */
+
+
+/* Styles for form elements Start */
+
+.crmEntityFormView .cell label {
+    font-family: Verdana;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.crmEntityFormView .cell {
+    padding: 0 0 20px 0;
+}
+
+.crmEntityFormView div.description {
+    font-size: 14px;
+    color: #243441;
+    font-weight: 300;
+}
+
+.form-control {
+    border-color: #90979f;
+    font-family: Verdana;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px 12px;
+    height: 40px;
+    max-width: calc(100% - 30px);
+}
+
+    .form-control:focus {
+        border-color: #006938;
+        background-color: rgba(0, 105, 56, 0.1);
+        color: #006938;
+        outline: 0 none;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+    }
+
+.datetimepicker {
+    max-width: calc(100% - 30px);
+}
+
+    .datetimepicker .input-group-addon {
+        padding: 5px 0 0 15px;
+        background: #fff;
+        border: 0;
+        font-size: 34px;
+    }
+
+    .datetimepicker input {
+        max-width: none;
+    }
+
+.crmEntityFormView .checkbox-cell input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    left: 4px;
+    top: 2px;
+    z-index: 2;
+}
+
+.crmEntityFormView .cell.checkbox-cell div.info {
+    padding-left: 30px;
+}
+
+.crmEntityFormView .checkbox {
+    position: relative;
+}
+
+.crmEntityFormView .checkbox-cell .checkbox-style {
+    content: '';
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 1px solid #90979f;
+    z-index: 1;
+}
+
+    .crmEntityFormView .checkbox-cell .checkbox-style:hover, .crmEntityFormView .checkbox-cell input[type="checkbox"]:hover + .checkbox-style {
+        background-color: rgba(0, 105, 56, 0.1);
+    }
+
+.crmEntityFormView .checkbox-cell input[type="checkbox"]:checked + .checkbox-style:after {
+    content: "\f00c";
+    font-family: FontAwesome;
+    left: 2px;
+    position: absolute;
+    font-size: 15px;
+    top: -2px;
+    color: #006938;
+}
+
+.crmEntityFormView .checkbox-cell input[type="checkbox"][disabled='disabled']:hover + .checkbox-style, .crmEntityFormView .checkbox-cell input[type="checkbox"][disabled='disabled'] + .checkbox-style:hover {
+    background-color: #fff !important;
+}
+
+.crmEntityFormView .cell.checkbox-cell:first-child {
+    padding-bottom: 5px;
+}
+
+
+/* radio button style */
+
+
+.crmEntityFormView .boolean-radio input[type="radio"], .crmEntityFormView .picklist input[type="radio"] {
+    opacity: 0;
+}
+
+.crmEntityFormView .boolean-radio label, .crmEntityFormView .picklist label {
+    padding-left: 10px;
+    position: relative;
+}
+
+.crmEntityFormView .picklist label {
+    font-weight: 300 !important;
+}
+
+.crmEntityFormView .cell .picklist input[type="radio"] {
+    margin-bottom: 10px;
+}
+
+.crmEntityFormView .boolean-radio, .crmEntityFormView .picklist {
+    margin-top: 5px;
+    display: block;
+}
+
+    .crmEntityFormView .boolean-radio label:before, .crmEntityFormView .picklist label:before {
+        content: '';
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: -2px;
+        left: -16px;
+        border: 1px solid #243441;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .crmEntityFormView .picklist label:before {
+        top: 0px;
+    }
+
+
+    .crmEntityFormView .boolean-radio input[type='radio']:not(:checked) + label:hover:before, .crmEntityFormView .picklist input[type='radio']:not(:checked) + label:hover:before {
+        background: rgba(0, 105, 56, 0.1);
+    }
+
+    /*
+.crmEntityFormView .boolean-radio input[type='radio']:not(:checked) + label:hover, .crmEntityFormView .picklist input[type='radio']:not(:checked) + label:hover {
+  color: #006938;
+}*/
+
+    .crmEntityFormView .boolean-radio input[type='radio']:checked + label, .crmEntityFormView .picklist input[type='radio']:checked + label {
+        font-weight: 700 !important;
+    }
+
+        .crmEntityFormView .boolean-radio input[type='radio']:checked + label:after, .crmEntityFormView .picklist input[type='radio']:checked + label:after {
+            content: '';
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            left: -12px;
+            top: 2px;
+            background-color: #006938;
+            border-radius: 50%;
+        }
+
+        .crmEntityFormView .picklist input[type='radio']:checked + label:after {
+            top: 4px;
+        }
+
+    .crmEntityFormView .picklist input[type='radio'][disabled='disabled'] + label:before, .crmEntityFormView .picklist input[type='radio'][disabled='disabled'] + label:hover:before {
+        border-color: #90979f;
+        background: #fff;
+        cursor: not-allowed;
+    }
+
+    .crmEntityFormView .picklist input[type='radio'][disabled='disabled'] + label {
+        color: #90979f;
+    }
+
+/*.crmEntityFormView .checkbox-cell input[type="checkbox"]:checked + .checkbox-style:after {
+    content: "\f00c";
+    font-family: FontAwesome;
+    left: 2px;
+    position: absolute;
+    font-size: 15px;
+    top:-2px;
+    color: #006938;
+
+}*/
+
+/*
+.crmEntityFormView .boolean-radio input {
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  border: 0;
+  overflow: hidden;
+}
+
+.crmEntityFormView .boolean-radio label {
+  display: inline-block !important;
+  width: 150px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: 300;
+  font-family: ms;
+  text-align: center;
+  padding: 10px 14px;
+  border: 1px solid #000;
+  margin-top: 10px;
+
+}
+
+.crmEntityFormView .boolean-radio input:hover + label {
+  background-color: rgba(0, 105, 56, 0.1);
+}
+
+.crmEntityFormView .boolean-radio input:checked + label {
+  background-color: #243441;
+  color: #fff;
+}
+*/
+
+
+.crmEntityFormView .tab .tab-column {
+    padding-left: 0;
+}
+
+.crmEntityFormView .alert {
+    border-color: #fff;
+    background-color: #fff;
+    font-weight: 300;
+    font-family: Verdana;
+    clear: both;
+    position: relative;
+    padding: 10px 0 0 25px;
+    margin-bottom: 0;
+}
+
+.alert.alert-warning {
+    color: #fff;
+    background-color: #333F48;
+    padding: 15px 15px 15px 30px;
+    top: 10px;
+    margin-bottom: 10px;
+}
+
+.crmEntityFormView .cell div.info.required label:after {
+    font-family: Verdana;
+ }
+
+.crmEntityFormView .alert:before {
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 22px;
+    top: 5px;
+    left: 0;
+}
+
+.crmEntityFormView .alert.alert-warning:before {
+    content: '\f06a';
+    color: #fff;
+    top: 12px;
+    left: 5px;
+}
+
+.crmEntityFormView .alert.alert-warning + .control input {
+    border: 1px solid #EDB500;
+}
+
+.alert.alert-error {
+    color: #DE6018;
+}
+
+    .alert.alert-error:before {
+        content: '\f057';
+        color: #DE6018;
+    }
+
+.alert-error-control input, .crmEntityFormView .checkbox-cell.alert-error-control .checkbox-style, .crmEntityFormView .alert-error-control .boolean-radio label:before {
+    border-color: #DE6018;
+}
+
+    .alert-error-control input[type='text']:not(:focus), .alert-error-control textarea:not(:focus), .alert-error-control select {
+        background-color: rgba(216, 96, 24, 0.1);
+    }
+
+
+/* Vision tab styling customisations */
+
+table[data-name='VisualAcuityAidedSection'] input, table[data-name='VisualAcuityUnaidedSection'] input {
+    max-width: calc(100% - 50px);
+}
+
+table[data-name='VisualAcuityAidedSection'] .text .control.input-valid:after, table[data-name='VisualAcuityUnaidedSection'] .text .control.input-valid:after {
+    right: 20px;
+}
+
+table[data-name='VisionTab_section_5'] .boolean-radio-cell {
+    padding-bottom: 0 !important;
+}
+
+.boolean-radio-cell .input-valid:after {
+    left: 120px;
+    top: 0;
+}
+
+.picklist-horizontal-input-valid:after {
+    left: 120px;
+    top: 0 !important;
+}
+/*
+.file-cell .control {
+    overflow: hidden;
+    position: relative;
+}
+
+.file-cell .control [type=file] {
+    cursor: inherit;
+    display: block;
+    font-size: 999px;
+    filter: alpha(opacity=0);
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+}
+
+.file-cell .control {
+    background: red;
+    border-radius: .5em;
+    float: left;
+    padding: .5em;
+}
+
+.file-cell .control [type=file] {
+    cursor: pointer;
+} */
+
+.crmEntityFormView fieldset {
+    margin-bottom: 0;
+    max-width: 700px;
+    margin: auto;
+}
+
+.crmEntityFormView .control.display-tick {
+    position: relative;
+}
+
+.form-custom-actions {
+    margin: 0 0 20px 0;
+    padding-bottom: 20px;
+    background: #fff;
+}
+
+
+@media (min-width: 768px) {
+    .form-custom-actions > div {
+        width: 360px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .form-custom-actions > div {
+        width: 500px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .form-custom-actions > div {
+        width: 700px !important;
+    }
+}
+
+.form-custom-actions > div {
+    margin: auto;
+    float: none;
+    padding: 0;
+}
+
+
+    .form-custom-actions > div .entity-action-button input {
+        width: 200px;
+        background-color: #243441;
+        position: relative;
+        text-align: center;
+        color: #fff;
+        border-width: 0;
+        border-radius: 2px;
+        padding: 10px;
+    }
+
+    .form-custom-actions > div .entity-action-button:after {
+        content: "\f053";
+        font-family: FontAwesome;
+        left: 15px;
+        color: #fff;
+        position: absolute;
+        font-size: 14px;
+        top: 16px;
+        width: 10px;
+        z-index: 100;
+    }
+
+    .form-custom-actions > div .entity-action-button:last-child:after {
+        content: "\f054";
+        font-family: FontAwesome;
+        left: auto;
+        right: 15px;
+        color: #fff;
+        position: absolute;
+        font-size: 14px;
+        top: 16px;
+        width: 10px;
+        z-index: 100;
+    }
+
+    .form-custom-actions > div .entity-action-button input:hover {
+        background-color: #90979f;
+    }
+
+    .form-custom-actions > div .entity-action-button:last-child input {
+        background-color: #006938;
+    }
+
+        .form-custom-actions > div .entity-action-button:last-child input:hover {
+            background-color: #39b54a;
+        }
+
+    .form-custom-actions > div .entity-action-button:last-child {
+        float: right;
+    }
+
+    .form-custom-actions > div .entity-action-button input:focus {
+        outline: 0 none;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+    }
+
+
+#spinner-modal .modal-dialog,
+#spinner-modal .modal-content,
+#spinner-modal .modal-body {
+    background: transparent;
+    color: rgba(255,255,255,1);
+    box-shadow: none;
+    border: none;
+    top: calc(50% - 24px);
+}
+
+/* Styles for form elements end */
+
+/* Styles for Medical Reports Login start */
+
+#EntityFormControl,
+#reportSelection {
+    background-color: white;
+    border: 1px solid #333F48;
+    padding: 2%;
+}
+
+#EntityFormControl .btn.btn-primary,
+#reportSelection .btn {
+    background-color: #243441;
+    border: 0;
+}
+
+#EntityFormControl #EntityFormPanel div.actions {
+    max-width: 700px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 19px auto 60px auto;
+    border-top: 0;
+}
+
+#EntityFormControl #EntityFormPanel #EntityFormControl_EntityFormView,
+#EntityFormControl #EntityFormPanel div.actions{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Styles for Medical Reports Login end */
+
+/* Styles for Select Reports start */
+#page-body-container {
+    background-color: #243441;
+    margin-top: 160px;
+}
+
+#reportSelection {
+    background-color: white;
+    padding: 2%;
+    margin: 0 auto;
+}
+
+#reportSelection #report-controls-container {
+    display: block;
+    float: none;
+    margin: 0 auto;
+}
+
+.button-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.button-container a {
+    margin: 0 1em 40px 1em;
+}
+
+#tblDraftReports {
+    font-family="Verdana,Geneva,sans-serif";
+}
+
+#tblDraftReports tbody tr td:first-of-type {
+    min-width: 7em;
+}
+
+#MessagePanel {
+    display: none;
+}
+
+.section-link, .section-link-container a {
+    cursor: pointer;    
+    padding-bottom: 10px;
+}
+
+/* Styles for Select Reports end */
+
+/* Styles for Attachments start */
+#subgridAttachments .entity-grid.subgrid .view-grid table th a[role=button] {
+    color: var(--vicroads-navy);
+}
+
+#subgridAttachments > div > div.view-toolbar.grid-actions.clearfix > div > div > a.btn.btn-primary {
+    background-color: var(--vicroads-navy);
+    border: 0;
+}
+
+#subgridAttachments > div > div.view-grid > table > tbody > tr > td:nth-child(2) {
+    padding-right: 0;
+}
+
+#subgridAttachments > div > div.view-grid > table > tbody > tr > td > div.dropdown.action > button {
+    display: none;
+}
+
+#subgridAttachments > div > div.view-grid > table > tbody > tr > td > div.dropdown.action > .dropdown-menu {
+    display: block;
+    position: relative !important;
+    border: 0;
+    box-shadow: none;
+}
+
+#subgridAttachments > div > div.view-grid > table > tbody > tr > td > div.dropdown.action > .dropdown-menu > li {
+    text-align: right;
+}
+
+#subgridAttachments > div > div.view-grid > table > tbody > tr > td > div.dropdown.action > .dropdown-menu > li > .delete-link {
+    background-color: var(--vicroads-navy);
+    color: white;
+    padding: 6px 12px;
+    display: inline;
+}
+
+#subgridAttachments > div > section.modal.fade.modal-form.modal-form-insert.in > div > div > div.modal-body > iframe {
+    height: 200px;
+}
+
+#subgridAttachments > div > section.modal > div > div > div.modal-footer > button.btn {
+    border-color: var(--vicroads-navy);
+}
+
+#subgridAttachments > div > section.modal > div > div > div.modal-footer > button.primary.btn.btn-primary {
+    background-color: var(--vicroads-navy);
+}
+
+#subgridAttachments > div > section.modal > div > div > div.modal-footer > button.cancel.btn.btn-default {
+    color: var(--vicroads-navy);
+}
+
+#subgridAttachments > div > section.modal > div > div > div.modal-header > h1 {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#subgridAttachments > div > div.view-grid {
+    overflow-x: visible;
+}
+
+/* Styles for Attachments end */
+
+/*below css class addded as part of CMPP-6015 changes */
+.crmEntityFormView .cell div.info.required label[id="vr_privatelicencestandardeyesightreport_label"].input-valid:before,
+.crmEntityFormView .cell div.info.required label[id="vr_privatelicencestandard_label"].input-valid:before,
+.crmEntityFormView .cell div.info.required label[id="vr_commerciallicencestandard_label"].input-valid:before, 
+.crmEntityFormView .cell div.info.required label[id="vr_commerciallicencestandardeyesightreport_label"].input-valid:before
+{
+        font-family: 'Glyphicons Halflings';
+        content: "\e013";
+        color: #006938;
+        position: absolute;
+        right: -18%;
+        top: 0px;
+}
+
+/* CMPP-6052 below class will adjust the length of the control */
+
+.notification-width{
+    width: 96%;
+}
+
+/*CMPP-6093 css classes */
+
+.field-highlight {
+    padding-left: 10px;
+    padding-right: 22px;
+    border-left: 3px solid green;
+    border-right: 3px solid green;
+}
+
+.field-highlight-top {
+    border-top: 3px solid green;
+} 
+
+.field-highlight-bottom { 
+    border-bottom: 3px solid green;
+}
+
+.table-test { border-collapse: collapse; }
